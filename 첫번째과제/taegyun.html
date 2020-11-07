@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>정답 화면입니다!</title>
 </head>
+<header>
+	<h1>Create An Account</h1>
+</header>
+
 <body>
-    <div>커밋하려고 테스트하는거에요</div>
-</body>
+	<form>
+		<label for="userFN">First name</label>
+      <input required type="text" placeholder="First name" id="userFN"/><br>
+      <label for="userLN">Last name</label>
+      <input required type="text" placeholder="Last name" id="userLN"/><br>
+      <label for="userEM">Email</label>
+      <input required type="email" placeholder="Email" id="userEM"/><br>
+      <label for="userName">Username</label>
+      <input required type="text" placeholder="Username" id="userName"/><br>
+      <label for="userPW">Password</label>
+      <input required type="Password" minlength="10" placeholder="Password" id="userPW"/><br>
+      <label for="userBD">Birthday</label>
+      <input required type="date" placeholder="yyyy/mm//dd" id="userBD"/><br>
+      <label for="userHappy">How happy are you?</label>
+      <input required type="range" id="userHappy" step="10" list="tickmark"/><br>
+      <datalist id="tickmark">
+        <option value="0"></option>
+        <option value="10"></option>
+        <option value="20"></option>
+        <option value="30"></option>
+        <option value="40"></option>
+        <option value="50"></option>
+        <option value="60"></option>
+        <option value="70"></option>
+        <option value="80"></option>
+        <option value="90"></option>
+        <option value="100"></option>
+      </datalist>
+      <label for="userColor">What is your fav.color? </label>
+      <input required type="color" id="userColor"/><br>
+      <input type="submit" value="Create Account"/>
+    </form>
+  </body>
 </html>
